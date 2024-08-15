@@ -138,5 +138,26 @@ import p20 from './X.avif'
     new_price:50,
     old_price:60,
  },
+    {
+    id:18,
+    image:p18,
+    catagory:"woman",
+    new_price:50,
+    old_price:60,
+ },
+    {
+    id:19,
+    image:p19,
+    catagory:"woman",
+    new_price:50,
+    old_price:60,
+ },
+    {
+    id:20,
+    image:p20,
+    catagory:"woman",
+    new_price:50,
+    old_price:60,
+ },
 ]
 export default allproduct
