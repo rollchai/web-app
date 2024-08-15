@@ -9,7 +9,7 @@ import Cart from './pages/Cart';
 import Loginsignup from './pages/Loginsignup';
 
 function App() {
-  debugger
+ 
   return (
     
     <div >
