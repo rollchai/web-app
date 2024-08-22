@@ -13,7 +13,7 @@ import womanbanner from "./component/anotherphotofolder/Screenshot (109) copy 2.
 import kids from "./component/anotherphotofolder/Screenshot (111) copy.png"
 
 function App() {
- 
+
   return (
     
     <div >
@@ -21,14 +21,18 @@ function App() {
    <Navbar/>
    
    <Routes>
+    
     <Route path='/' element={<Shop/>}/>
     <Route path='/men' element={<Shopcatagory banner={manbanner} catagory="men" />}/>
     <Route path='/women' element={<Shopcatagory  banner= {womanbanner}catagory="women"/>}/>
     <Route path='/kids' element={<Shopcatagory banner={kids} catagory="kids"/>}/>
-    <Route path='/product' element={<Product/>}/>
-    <Route path=':productId' element={<Product/>}/>
+    <Route path='/product/:productId' element={<Product />} />
+
+    {/* <Route path='/product' element={<Product/>}/>
+    <Route path=':productId' element={<Product/>}/> */}
     <Route path='/cart' element={<Cart/>}/>
     <Route path='/login' element={<Loginsignup/>}/>
+   =
    </Routes>
    <Footer/> 
 </BrowserRouter>

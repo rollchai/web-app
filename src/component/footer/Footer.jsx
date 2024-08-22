@@ -3,12 +3,12 @@ import "./Footer.css"
 import insta from "../anotherphotofolder/instagram logo.jpg"
 import whatsapp from "../anotherphotofolder/whatsapp.png"
 import x from "../anotherphotofolder/X.avif"
-import logo from "../anotherphotofolder/download (1).png"
+import logo from "../anotherphotofolder/download (1) copy.png"
 const Footer = () => {
   return (
     <div className='footer'>
         <div className="footerlogo">
-            <img src={logo} alt="" />
+            <img src={logo} alt="" style={{marginTop:"50px"}} />
             <p>SHOPPER</p>
         </div>
         <ul className='footer-links'>

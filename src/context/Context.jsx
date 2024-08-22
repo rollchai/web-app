@@ -6,7 +6,7 @@ const ContextProvider =(props)=>{
     const contextvalue= {allproduct};
     return (
         <Context.Provider value={contextvalue}>
-            {props.children}
+            {props.children} 
             </Context.Provider>
     )
 }
