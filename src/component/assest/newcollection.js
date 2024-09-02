@@ -4,9 +4,6 @@ import pic3 from "./fash2.jpg"
 import pic4 from "./manpopu1.jpeg"
 import pic5 from "./manpopu2.webp"
 import pic6 from "./mainmodel-removebg-preview.png"
-import pic7 from "./462100.jpg"
-import pic8 from "./bahtumain.jpg"
-import pic9 from "./download (1).png"
 
 let collection=[
     {
