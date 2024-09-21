@@ -1,7 +1,7 @@
 import p1 from './womanpopu1.jpeg'
 import p2 from './womanpopu2.webp'
 import p3 from './womanpopu3.jpeg'
-import p4 from './offer.jpg'
+import p4 from './manpopu1.jpeg'
 
 let data_product=[
     {
