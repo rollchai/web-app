@@ -5,6 +5,7 @@ import stardullicon from "../anotherphotofolder/stardull.svg"
 import { Context } from '../../context/Context'
 const Productdisplay = (props) => {
     const {product}=props
+    
     const {addtocart}=useContext(Context);
   return (
     <div className='Productdisplay'>
@@ -49,7 +50,7 @@ const Productdisplay = (props) => {
                 </div>
                 <button onClick={()=>{
                     addtocart(product.id)
-                }}>Add To Cart</button>
+                }} >Add To Cart</button>
                 <p className='productdisplay-right-catagory'><span>catagory :</span>woman, T-shirt, crop Top</p>
                 <p className='productdisplay-right-catagory'><span>Tags :</span>Modern, Latest, crop Top</p>
                 </div> 

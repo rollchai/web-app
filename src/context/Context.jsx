@@ -4,6 +4,7 @@ import allproduct from "../component/assest/All_project"
 export const Context =createContext(null);
 const getDefaultValue=()=>{
     let cart={};
+   
     for (let index = 0; index < allproduct.length+1; index++) {
         cart[index] = 0
         
@@ -27,6 +28,7 @@ const ContextProvider =(props)=>{
         }))
     }
     const contextvalue= {allproduct,cartitems,addtocart,removefromcart}; 
+ 
     return (
         <Context.Provider value={contextvalue}>
             {props.children} 
