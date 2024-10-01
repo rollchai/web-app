@@ -4,7 +4,7 @@ import { Context } from '../../context/Context'
 import removeicon from "../anotherphotofolder/remove.svg"
 
 const Carditems = () => {
-    const{allproduct,cartitems,removefromcart}=useContext(Context)
+    const{allproduct,cartitems,removefromcart,gettotalcartamount}=useContext(Context)
     
   return (
     <div className='Cartitems'>
@@ -46,9 +46,27 @@ return null;
                 subtotal
             </p>
             <p>
-                &{0}
+                &{gettotalcartamount()}
             </p>
         </div>
+        <hr/>
+        <div className="cartitems-total-item">
+            <p>Shipping Fee</p>
+            <p>Free</p>
+        </div>
+        <hr/>
+        <div className="cartitems-total-item">
+            <h3>Total</h3>
+            <h3>${gettotalcartamount()}</h3>
+        </div>
+        </div>
+        <button>PROCEED TO CHECKOUT</button>
+    </div>
+    <div className="cartitems-promocode">
+        <p>If You have a promocode, Enter it here</p>
+        <div className="cartitems-promobox">
+            <input type='text' placeholder='promo code '/>
+            <button>Submit</button>
         </div>
     </div>
 </div>
