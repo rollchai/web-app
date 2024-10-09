@@ -1,18 +1,27 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useRef, useState } from 'react'
 import "./Navbar.css"
 import logo from "../assest/download (1).png"
 import carticon from "../assest/Cart.svg"
 import { Link } from 'react-router-dom'
 import { Context } from '../../context/Context'
+import nav_dropdown from "../anotherphotofolder/anotherdropdown.svg"
 const Navbar = () => {
 const [menu,setmenu]=useState("shop")
 const{gettotalcartitem}=useContext(Context)
+const menuref =useRef();
+
+const dropdown_toggle=(e)=>{
+  menuref.current.classList.toggle('nav-menu-visible'); //when we click on the icon then the nav-menu-visible class is added
+  e.target.classList.toggle('open'); //when we click on the image then the open class will be open 
+}
+
   return ( 
     <div className='navbar'>
       <div className="nav-logo"> <img src={logo} alt="" />
       <p>SHOPPER</p>
       </div>
-      <ul className='nav-menu'>
+      <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt=" "  />
+      <ul ref={menuref} className='nav-menu'>
         <li onClick={()=>{
           setmenu("shop")
         }}><Link style={{textDecoration:"none"}} to="/">Shop</Link>{menu==="shop"?<hr/>:<></>}</li>
