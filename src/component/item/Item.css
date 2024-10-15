@@ -3,6 +3,7 @@
 }
 .item img{
     width:280px;
+    object-fit: contain;
 }
 .item p{
     margin: 6px 0px;
@@ -33,6 +34,7 @@
     }
     .item img{
         width: 220px;
+        object-fit: contain;
     }
     .item-price-old{
         font-size: 14px;
@@ -48,5 +50,28 @@
     }
     .item-price-old{
         font-size: 13px;
+    }
+}
+@media(max-width:800px){
+    .item{
+        width: 120px;
+        font-size:12px ;
+    }
+    .item img{
+        width: 120px;
+        
+        object-fit: contain;
+    }
+    .item-price-old{
+        font-size: 12px;
+    }
+}
+@media(max-width:500px){
+    .item{
+        width: 160px;
+    }
+    .item img{
+        width: 160px;
+        object-fit: contain;
     }
 }

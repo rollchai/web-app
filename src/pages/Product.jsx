@@ -22,6 +22,7 @@ const Product = () => {
       <DescriptionBox/>
       <Relatedproducts/>
     </div>
+    //breadcrum ki jgh productdetails
   )
 }
 
