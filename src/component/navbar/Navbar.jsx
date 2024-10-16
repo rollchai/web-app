@@ -18,7 +18,7 @@ const dropdown_toggle=(e)=>{
   return ( 
     <div className='navbar'>
       <div className="nav-logo"> <img src={logo} alt="" />
-      <p>SHOPPER</p>
+      <p>ShopWave</p>
       </div>
       <img className='nav-dropdown' onClick={dropdown_toggle} src={nav_dropdown} alt=" "  />
       <ul ref={menuref} className='nav-menu'>
