@@ -72,7 +72,10 @@ width: 80px;
         font-size: 18px;
     }
     .hero-right img{
-        width: 500px;
+        /* margin-right: 85px; */
+        object-fit: contain;
+        
+        
         
     }
 }

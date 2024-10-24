@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Hero.css"
-import hero from "../assest/bahtumain-removebg-preview.png"
+
+import model from "../anotherphotofolder/model hd.png"
 import handicon from "../assest/hand.svg"
 import arrow from "../assest/arrow.svg"
 const Hero = () => {
@@ -22,7 +23,7 @@ const Hero = () => {
 </div>
         </div>
         <div className="hero-right">
-<img src={hero} alt="" />
+<img src={model} alt=""width="870px" />
         </div>
     </div>
   )
