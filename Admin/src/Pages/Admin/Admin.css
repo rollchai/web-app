@@ -1,0 +1,8 @@
+.Admin{
+    display: flex;
+}
+@media(max-width:800px){
+    .Admin{
+        flex-direction: column;
+    }
+}
